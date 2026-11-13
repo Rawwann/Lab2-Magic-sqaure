@@ -1,8 +1,6 @@
+#include <iostream>
+using namespace std;
 
 #include "setcolor.h"
 
-#include <cstdio>
-
-void setColor(Color c) { printf("\033[%dm", c); }
-
-// m -> Text Formatting
+void setColor(int color) { cout << "\033[" << color << "m"; }
